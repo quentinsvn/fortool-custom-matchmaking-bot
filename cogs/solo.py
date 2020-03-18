@@ -35,7 +35,7 @@ class Solo(commands.Cog):
                 embed.add_field(name="Création en cours", value=':flag_fr: Votre partie personnalisée est en cours de création...')
                 embed.add_field(name="Creation in progress", value=":flag_gb: Your custom game is being created ...")
                 await ctx.channel.send(embed=embed)
-                command = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/solo-1.exe"
+                command = "macro-shadow/solo-1.exe"
                 #subprocess.Popen(command)
                 await asyncio.sleep(14)
                 keyboard = Controller()
@@ -47,7 +47,7 @@ class Solo(commands.Cog):
                     title=f"Code: {randomcode}",
                     colour = discord.Colour.blue()
                 )
-                start = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/solo-2.exe"
+                start = "macro-shadow/solo-2.exe"
                 #subprocess.Popen(start)
                 request.add_field(name='Mode: Solo', value=':flag_fr: Vous avez 2 minutes pour rejoindre la partie!')
                 request.add_field(name="Mode: Solo", value=':flag_gb: You have 2 minutes to join the party!')
@@ -55,7 +55,7 @@ class Solo(commands.Cog):
                 await asyncio.sleep(7)
                 await ctx.channel.send(embed=request)
                 await asyncio.sleep(128)
-                ready = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/ready.exe"
+                ready = "macro-shadow/ready.exe"
                 #subprocess.Popen(ready)
                 finish = discord.Embed(
                     description=f"{ctx.author.mention}",
