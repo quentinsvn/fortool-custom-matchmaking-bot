@@ -31,16 +31,16 @@ class Solo(commands.Cog):
                 if str(ctx.channel) in channels:
                     response = random.choice(["Solo", "Duo", "Section", "Arene solo"])
                     if(response == "Solo"):
-                        command = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/solo-1.exe"
+                        command = "macro-shadow/solo-1.exe"
                         #subprocess.Popen(command)
                     elif(response == "Duo"):
-                        command = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/duo-1.exe"
+                        command = "macro-shadow/duo-1.exe"
                         #subprocess.Popen(command)
                     elif(response == "Section"):
-                        command = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/section-1.exe"
+                        command = "macro-shadow/section-1.exe"
                         #subprocess.Popen(command)
                     elif(response == "Arene solo"):
-                        command = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/soloarene-1.exe"
+                        command = "macro-shadow/soloarene-1.exe"
                         #subprocess.Popen(command)
                     await asyncio.sleep(14)
                     keyboard = Controller()
@@ -53,16 +53,16 @@ class Solo(commands.Cog):
                         colour = discord.Colour.blue()
                     )
                     if(response == "Solo"):
-                        start = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/solo-2.exe"
+                        start = "macro-shadow/solo-2.exe"
                         #subprocess.Popen(start)
                     elif(response == "Duo"):
-                        start = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/duo-2.exe"
+                        start = "macro-shadow/duo-2.exe"
                         #subprocess.Popen(start)
                     elif(response == "Section"):
-                        start = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/section-2.exe"
+                        start = "macro-shadow/section-2.exe"
                         #subprocess.Popen(start)
                     elif(response == "Arene solo"):
-                        start = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/soloarene-2.exe"
+                        start = "macro-shadow/soloarene-2.exe"
                         #subprocess.Popen(start)
                     request.add_field(name=f'Mode: {response}', value=':flag_fr: Vous avez 2 minutes pour rejoindre la partie!')
                     request.add_field(name=f"Mode: {response}", value=':flag_gb: You have 2 minutes to join the game!')
@@ -70,7 +70,7 @@ class Solo(commands.Cog):
                     await asyncio.sleep(7)
                     await ctx.channel.send(embed=request)
                     await asyncio.sleep(128)
-                    ready = "C:/Users/Quentin SAVEAN/Desktop/python/macro-shadow/ready.exe"
+                    ready = "macro-shadow/ready.exe"
                     #subprocess.Popen(ready)
                     finish = discord.Embed(
                         title="Mode automatique",
